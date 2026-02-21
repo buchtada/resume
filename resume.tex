@@ -1,0 +1,87 @@
+\documentclass[letter,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usepackage{hyperref}
+\definecolor{customcolor}{RGB}{61, 90, 128}
+%====================
+% OFFICIAL PUBLIC OVERLEAF TEMPLATE
+% https://www.overleaf.com/latex/templates/data-science-tech-resume-template/zcdmpfxrzjhv
+% 
+%====================
+%
+% Resume template for data scientists, a complement to data-science-tech-cover-letter-template:
+% https://www.overleaf.com/latex/templates/data-science-tech-cover-letter-template/gbrcqktbsfxf
+%
+% Files:        resume.tex: Main file
+%               _header.tex: header code
+%               TLCresume.sty: style file containing formatting details
+%               section/objective: https://www.indeed.com/career-advice/resumes-cover-letters/resume-objective-examples
+%               section/skills: table of skills
+%               section/experience: projects or roles
+%               section/education: schools and stuff
+%               section/activities: optional, could comment out in resume.tex.
+%
+% Editor:       https://github.com/TimmyChan 
+%               https://www.linkedin.com/in/timmy-l-chan/
+%               
+% Last Updated: March 24th, 2022
+%
+%====================
+
+
+\usepackage{TLCresume}
+
+%====================
+% CONTACT INFORMATION
+%====================
+\def\name{David A. Buchta}
+\def\phone{(217) 714-7690}
+\def\email{buchtada@gmail.com}
+\def\LinkedIn{davidb216}
+\def\role{Machine Learning \& Advanced Analytics Engineer}
+
+\input{_header}
+\begin{document}
+\input{sections/objective}
+
+\section{Education}
+\input{sections/education}
+
+
+\section{Technical Experience \& Achievements}
+\input{sections/experience}
+
+\section{Brief Skill Summary}
+\input{sections/skills}
+
+
+
+\begin{tikzpicture}[font=\rmfamily,remember picture,overlay]
+\node[anchor=south,yshift=0.25in] at(current page.south){1 of 2};
+\end{tikzpicture}\\
+\pagebreak
+\section{Research Publications in Preparation \hfill {\small(Available upon request)}}
+\input{sections/preppublications}
+\section{Peer-Reviewed Publications \hfill {\small($^\star$indicates mentored student)}}
+\input{sections/publications}
+
+%\section{Research Proposal Contributions \hfill {\small($^\star$indicates funded)}}
+%\input{sections/proposals}
+
+%\section{Students Mentored}
+%\input{sections/mentorship}
+
+\section{Invited Talks \& Lectures}
+\input{sections/invited}
+
+\section{Journal Referee}
+\input{sections/referee}
+
+\section{Awards \& Honors}
+\input{sections/awards}
+
+
+\begin{tikzpicture}[font=\rmfamily,remember picture,overlay]
+\node[anchor=south,yshift=0.25in] at(current page.south){2 of 2};
+\end{tikzpicture}
+\end{document}
