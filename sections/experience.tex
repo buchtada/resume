@@ -1,16 +1,12 @@
-\documentclass[letter,10pt]{article}
-\usepackage{TLCresume}
-\definecolor{customcolor}{RGB}{61, 90, 128}
-\begin{document}
-
-
 \subsection{{Senior Advisor~~|~~Advanced Analytics \& Data Sciences~~|~~Manufacturing \& Supply Chain \hfill 2022-Present}}
 \subtext{Eli Lilly \& Company \hfill Indianapolis, IN}
 \begin{zitemize}
-\item Built end-to-end supply chain optimization platform for \$13B+ incretin portfolio (Mounjaro, Zepbound, Trulicity) using Python/Pyomo with Streamlit frontend deployed on Kubernetes, enabling real-time decision support for global orchestration teams.
+\item Developed agentic AI prototype using AutoGen and OptiGuide that autonomously modifies Pyomo optimization model constraints and structure, reducing scenario evaluation from hours to minutes and eliminating manual model reconfiguration (demonstrated via Streamlit interface).
+\item Built risk-aware transformer forecasting models (T5 with LoRA fine-tuning) for tirzepatide sales, penalizing underprediction to reduce stockout risk, integrated into production ensemble framework for inventory recommendations across market-SKU combinations.
+\item Built end-to-end supply chain optimization platform for worldwide distribution of 500M+ devices using Python/Pyomo with Streamlit frontend on Kubernetes, supporting monthly S\&OP cycles for global orchestration teams.
 \item Increased manufacturing capacity by 5M devices annually through ML-driven production line optimization, including dynamic time warping for root-cause downtime analysis {\color{customcolor} (patent pending)} and Bayesian anomaly detection {\color{customcolor} (patent pending)}.
 \item Designed physics-informed simulation framework combining ODEs with real fault data to optimize conveyor layouts {\color{customcolor} (patent pending)}, driving \$2M+ infrastructure investments that unlocked 1.5M additional devices annually.
-\item Developed neural ODE models in PyTorch for pharmacodynamic forecasting, improving predictions for insulin-glucose dynamics and biologics response using clinical trial data.
+\item Developed neural ODE models for pharmacodynamic forecasting with asymmetric loss functions penalizing glucose overprediction, reducing hypoglycemia risk in insulin dosing control while maintaining prediction accuracy.
 \item Scaled team effectiveness by mentoring 2 PhD interns, creating technical onboarding framework (Git workflows, documentation standards), and accelerating 4 new hire integrations.
 \end{zitemize}
 
@@ -31,7 +27,7 @@
 \subsection{{Research Scientist~~|~~Predictive Modeling \& ML for Complex Systems \hfill 2016-2019}}
 \subtext{University of Illinois at Urbana--Champaign \hfill Champaign, IL}
 \begin{zitemize}
-\item Delivered production-grade ignition prediction models with quantified uncertainty for \$20M DOE-funded research center.
+\item Developed ignition prediction models with quantified uncertainty for \$20M DOE-funded research center.
 \item Built CNN-based ML pipeline to accelerate combustion predictions, reducing simulation time while maintaining accuracy.
 \item Led cross-functional team coordination and sprint planning to meet aggressive delivery deadlines.
 \end{zitemize}
@@ -69,5 +65,3 @@
 %\item Nam feugiat erat vestibulum lacus feugiat, efficitur gravida nunc imperdiet.
 %\item Morbi porta lacus vitae augue luctus, a rhoncus est sagittis.
 %\end{zitemize}
-
-\end{document}

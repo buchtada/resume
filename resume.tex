@@ -36,12 +36,39 @@
 %====================
 \def\name{David A. Buchta}
 \def\phone{(217) 714-7690}
+\def\city{Indianapolis, IN}
 \def\email{buchtada@gmail.com}
 \def\LinkedIn{davidb216}
-\def\role{Machine Learning \& Advanced Analytics Engineer}
+\def\role{AI/ML/Research Scientist}
 
-\input{_header}
 \begin{document}
+
+% Compact header spread across the page
+\noindent
+\begin{minipage}[t]{0.3\textwidth}
+\raggedright
+\phone \\
+\city \\
+\href{mailto:\email}{\email}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.4\textwidth}
+\centering
+{\Huge \textbf{\name}} \\
+\vspace{0.25em}
+{\Large\color{highlight} \role}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+\raggedleft
+\href{https://teambuchta.com/}{teambuchta.com} \\
+\href{https://www.linkedin.com/in/\LinkedIn}{linkedin.com/in/\LinkedIn}
+\end{minipage}
+
+\vspace{0.5em}
+\noindent\makebox[\linewidth]{\color{highlight}\rule{\paperwidth}{1pt}}
+\vspace{0.5em}
+
 \input{sections/objective}
 
 \section{Education}
@@ -54,15 +81,7 @@
 \section{Brief Skill Summary}
 \input{sections/skills}
 
-
-
-\begin{tikzpicture}[font=\rmfamily,remember picture,overlay]
-\node[anchor=south,yshift=0.25in] at(current page.south){1 of 2};
-\end{tikzpicture}\\
-\pagebreak
-\section{Research Publications in Preparation \hfill {\small(Available upon request)}}
-\input{sections/preppublications}
-\section{Peer-Reviewed Publications \hfill {\small($^\star$indicates mentored student)}}
+\section{Selected Publications}
 \input{sections/publications}
 
 %\section{Research Proposal Contributions \hfill {\small($^\star$indicates funded)}}
@@ -74,14 +93,13 @@
 \section{Invited Talks \& Lectures}
 \input{sections/invited}
 
-\section{Journal Referee}
-\input{sections/referee}
+%\section{Journal Referee}
+%\input{sections/referee}
 
 \section{Awards \& Honors}
 \input{sections/awards}
 
+\section{Interests}
+\input{sections/interests}
 
-\begin{tikzpicture}[font=\rmfamily,remember picture,overlay]
-\node[anchor=south,yshift=0.25in] at(current page.south){2 of 2};
-\end{tikzpicture}
 \end{document}
